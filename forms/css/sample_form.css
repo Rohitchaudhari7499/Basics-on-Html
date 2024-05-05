@@ -1,0 +1,16 @@
+.sam-body{
+    background-color: pink;
+}
+.sam-form{
+    border:5px double olive ;
+    width: 50%;
+    margin: auto;
+    /* text-align: center; */
+    background-color: aqua;
+    border-radius: 20px;
+    
+}
+.form-title{
+    text-align: center;
+    text-decoration: underline;
+}

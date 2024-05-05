@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Rohit">
+        <meta name="description"content="Sample form">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Sample form</title>
+        <link href="../css/sample_form.css" rel="stylesheet">
+    </head>
+    <body bgcolor="lightgreen">
+        <h3 class="form-title">Sample form</h3>
+          <div class="sam-form">
+            
+            <form action="a">
+                <div>
+                 <label for="ag">Age</label>
+                 <input id="ag" type="number" name="age">
+                </div>
+                <div>
+                    <label for="sq">Share Quantity</label>
+                    <input id="sq" type="number" name="shareqty" min="50" max="100" step="5">
+                </div>
+                <div>
+                    <label>Select Your Hobbies</label>
+                    <div>
+                        <input id="hb1" name="hobbies" type="checkbox" value="dancing">
+                        <label for="hb1">Dance</label>
+                    </div>
+                    <div>
+                        <input id="hb2" name="hobbies" type="checkbox" value="singing" checked>
+                        <label for="hb2">Singing</label>
+                    </div>
+                    <div>
+                        <input id="hb3" name="hobbies" type="checkbox" value="travelling" checked>
+                        <label for="hb3">Travel</label>
+                    </div>
+                    <div>
+                        <label>Select Your Skills</label>
+                        <div>
+                            <input id="sk1" name="skills" type="checkbox">
+                            <label for="sk1">Python</label>
+                        </div>
+                        <div>
+                            <input id="sk2" name="skills" type="checkbox">
+                            <label for="sk2">HTML</label>
+                        </div>
+                        <div>
+                            <input id="sk3" name="skills" type="checkbox">
+                            <label for="sk3">Java</label>
+                        </div>
+                </div>
+                <div>
+                    <label>Select Gender</label>
+                    <div>
+                        <input type="radio" name="gender"  id="g1" value="male">
+                        <label for="g1">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="g1" value="female">
+                        <label for="g2">Female</label>
+                    </div>
+                </div>
+                <div>
+                    <label>Question 1: if x<sup>2</sup>=4 , then what is the value of x?</label>
+                </div>
+                <div>
+                <input type="radio" id="qu1op1" name="q1"  value="1">
+                <label for="qu1op1">1</label>
+            
+                <input type="radio" id="qu2op2" name="q2"  value="2">
+                <label for="qu2op2">2</label>
+            
+                <input type="radio" id="qu3op3" name="q3"  value="3">
+                <label for="qu3op3">3</label>
+            
+                <input type="radio" id="qu3op4" name="q4"  value="4">
+                <label for="qu3op4">4</label>
+            </div>
+            <div>
+                <label for="bd">Your Birth Date</label>
+                <input id="bd" type="date" name="birthdate">
+            </div>
+            <div>
+                <label for="pd">Select Date Between 1-1-2000 and 31-12-2015</label>
+                <input id="pd" type="date" name="product_date" min="2000-01-01" max="2018-12-31">
+            </div>
+            <div>
+                <label for="fdt">Flight departure Time</label>
+                <input id="fdt" type="time" name="flightdeparturetime">
+            </div>
+            <div>
+                <label for="fat">Flight Arrival Time</label>
+                <input id="fat" type="time" name="flightarrivaltime">
+            </div>
+            <div>
+                <label for="tddt">Train Departure Date and Time</label>
+                <input id="tddt" type="datetime-local" name="traindeparttime">
+
+                <label for="tadt">Train Arrival Date and Time</label>
+                <input id="tadt" type="datetime-local" name="trainarrivaltime">
+            </div>
+            <div>
+                <label for="w">Select Week and Year</label>
+                <input id="w" type="week" name="weekyear">
+            </div>
+            <div>
+                <label for="cr">Select Credit Card Expiry Month and Year</label>
+                <input id="cr" type="month" name="creditcarsexpiry">
+            </div>
+            <div>
+                <label for="eml"> Enter Your email address</label>
+                <input id="eml" type="email" name="emailid" required placeholder="Email address">
+            </div>
+            <div>
+                <label for="m">Enter Mobile Number</label>
+                <input id="m" type="tel" name="mobileNo" pattern="[0-9]{10}" maxlength="10"  required placeholder="Enter 10 digit only">
+             </div>
+             <div>
+                <label for="sv1">Speaker volume{Default Range}</label>
+                <input id="sv1" type="range" name="speaker_volume">
+                <label for="sv1">100</label>
+            </div>
+            <div>
+                <label for="svm2">Speaker volume{Custom Range}</label>
+                <input id="sv2" type="range" name="speaker_volume" min="10" max="70" step="5">
+                <label for="sv2">70</label>
+            </div>
+            <div>
+                <label for="clr">Select Your Favorate Color</label>
+                <input id="clr" type="color" name="fvt_color" value="#ff0000">
+            </div>
+            <div>
+                <label for="f1">Select Your Photo To Upload</label>
+                <input id="f1" type="file" name="profileImage">
+            </div>
+            <div>
+                <label for="u1"> Enter Your Profile Url</label>
+                <input id="url" type="url" name="profile_url">
+            </div>
+            <div>
+                <label for="srch">Search</label>
+                <input id="srch" type="search" name="search_content">
+            </div>
+            <div>
+                <label for="addr">Address</label>
+                <textarea name="person_address" rows="5" cols="50"> Enter your ddress</textarea>
+            </div>
+            <div style="text-align: center;">
+                <label for="q1">qualification</label>
+                <select id="q1" name="qualification"> 
+                    <option value="Bsc"> B.Sc.</option>
+                    <option value="Msc"> M.Sc.</option>
+                    <option value="BCA"> B.C.A</option>
+                    <option value="McA"> M.C.A</option>
+                    <option value="BE"> B.E.</option>
+                    <option value="ME"> M.E.</option>
+                </select>
+            </div>
+            <div>
+                <label for="sk">Skills</label>
+                <select id="sk" name="skills" size="5" multiple>
+                    <option value="html">HTML</option>
+                    <option value="css">css</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="react">React</option>
+                    <option value="Angular">Angular</option>
+                    <option value="Nodejs">NodeJS</option>
+                    <option value="Corejava">Corejava</option>
+                    <option value="servietJSP">ServietJSPL</option>
+                    <option value="Spring">Spring</option>
+                    <option value="sql">SQL</option>
+                    <option value="Springboot">SpringBoot</option>
+                    <option value="mangodb">MangoDB</option>
+
+                </select>
+            </div>
+             <div>
+                <!-- <input type="submit"> -->
+                <button type="submit">Submit</button>
+                <button type="reset  ">Reset</button>
+             </div>
+             
+            </form>
+        </div>
+    </body>
+</html>

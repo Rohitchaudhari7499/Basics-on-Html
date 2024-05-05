@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Rohit">
+        <meta name="description"content="Sample form">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title class="">Sample form</title>
+        <link rel="stylesheet" href="../forms/css/profile_form.css">
+    </head>
+    <body bgcolor="lightgreen">
+        <h3 class="profile-h">PERSONAL DETAILS</h3>
+          <div class="profile-form">
+            <form action="a">
+                <fieldset>
+                    <legend>Personal Details</legend>
+                <div>
+                    <label for="unm">Username</label>
+                    <input id="unm"
+                     type="text"
+                     name="username"
+                     required>
+                </div>
+                <div>
+                    <label for="pwd">Password</label>
+                    <input id="pwd" 
+                     type="password" 
+                     name="password"
+                     required
+                     minlength="6"
+                     maxlength="10">
+                </div>
+                <div>
+                 <label for="ag">Age</label>
+                 <input id="ag" type="number" name="age">
+                </div>
+                <div>
+                    <label for="bd">Your Birth Date</label>
+                    <input id="bd" type="date" name="birthdate">
+                </div>
+                
+                <div>
+                    <label>Select Gender</label>
+                    <div>
+                        <input type="radio" name="gender"  id="g1" value="male">
+                        <label for="g1">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="g1" value="female">
+                        <label for="g2">Female</label>
+                    </div>
+                </div>
+                <div>
+                    <label>Select Your Hobbies</label>
+                    <div>
+                        <input id="hb1" name="hobbies" type="checkbox" value="dancing">
+                        <label for="hb1">Dance</label>
+                    </div>
+                    <div>
+                        <input id="hb2" name="hobbies" type="checkbox" value="singing" checked>
+                        <label for="hb2">Singing</label>
+                    </div>
+                    <div>
+                        <input id="hb3" name="hobbies" type="checkbox" value="travelling" checked>
+                        <label for="hb3">Travel</label>
+                    </div>
+                    <div>
+                        <label for="clr">Select Your Favorate Color</label>
+                        <input id="clr" type="color" name="fvt_color" value="#ff0000">
+                    </div>
+                    <div>
+                        <label for="cf"> Select your favourite coffee</label>
+                        <input id="cf" list="coffee">
+                        <datalist id="coffee">
+                            <option value="ESPRESSO">ITALIAN COFFEE</option>
+                            <option value="NES-CAFE">NES-COFFEE</option>
+                            <option value="MOCHA">MOCHA</option>
+                            <option value="JAVA">JAVA</option>
+                            <option value="BREW">BREW</option>
+                        </datalist>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Details</legend>
+                    <div>
+                        <label for="email">Address</label>
+                        <input id="address" 
+                         type="text" 
+                         name="address" 
+                         placeholder="Enter Your Address">
+                    </div>
+                <div>
+                    <label for="email">Email Address</label>
+                    <input id="email" 
+                     type="text" 
+                     name="email" 
+                     placeholder="Enter Your Email Address">
+                </div>
+                <div>
+                    <label for="signup">Confirm Password</label>
+                    <input id="signup" 
+                     type="password" 
+                     name="confirmpassword" 
+                     placeholder="Enter Your Password">
+                </div>
+                <div>
+                    <label for="num">Contact Number</label>
+                    <input id="num" 
+                     type="number" 
+                     name="number" 
+                     placeholder="Enter Your Number">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Education Details</legend>
+            <div>
+                <label for="q1">qualification</label>
+                <select id="q1" name="qualification"> 
+                    <option value="Bsc"> B.Sc.</option>
+                    <option value="Msc"> M.Sc.</option>
+                    <option value="BCA"> B.C.A</option>
+                    <option value="McA"> M.C.A</option>
+                    <option value="BE"> B.E.</option>
+                    <option value="ME"> M.E.</option>
+                </select>
+            </div>
+            <div>
+                <label>Select Your Skills</label>
+            <div>
+                <label for="sk">Skills</label>
+                <select id="sk" name="skills" size="5" multiple>
+                    <option value="html">HTML</option>
+                    <option value="css">css</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="react">React</option>
+                    <option value="Angular">Angular</option>
+                    <option value="Nodejs">NodeJS</option>
+                    <option value="Corejava">Corejava</option>
+                    <option value="servietJSP">ServietJSPL</option>
+                    <option value="Spring">Spring</option>
+                    <option value="sql">SQL</option>
+                    <option value="Springboot">SpringBoot</option>
+                    <option value="mangodb">MangoDB</option>
+
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Travelling Details</legend>
+            <div>
+                <label for="fdt">Flight departure Time</label>
+                <input id="fdt" type="time" name="flightdeparturetime">
+            </div>
+            <div>
+                <label for="fat">Flight Arrival Time</label>
+                <input id="fat" type="time" name="flightarrivaltime">
+            </div>
+            <div>
+                <label for="tddt">Train Departure Date and Time</label>
+                <input id="tddt" type="datetime-local" name="traindeparttime">
+
+                <label for="tadt">Train Arrival Date and Time</label>
+                <input id="tadt" type="datetime-local" name="trainarrivaltime">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Payment Details</legend>
+            <div>
+                <label for="cr">Select Credit Card Expiry Month and Year</label>
+                <input id="cr" type="month" name="creditcarsexpiry">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Professional Details</legend>
+            <div>
+                <label for="f1">Select Your Photo To Upload</label>
+                <input id="f1" type="file" name="profileImage">
+            </div>
+            <div>
+                <label for="u1"> Enter Your Profile Url</label>
+                <input id="url" type="url" name="profile_url">
+            </div>
+        </fieldset>
+                
+            
+             <div>
+                <!-- <input type="submit"> -->
+                <button type="submit">Submit</button>
+                <button type="reset  ">Reset</button>
+             </div>
+            </form>
+        </div>
+    </body>
+</html>

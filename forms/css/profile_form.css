@@ -1,0 +1,11 @@
+.profile-form{
+    border: 5px groove gold;
+    width: 80%;
+    margin: auto;
+}
+.profile-h{
+    text-align: center;
+    text-decoration: underline;
+    color: brown;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

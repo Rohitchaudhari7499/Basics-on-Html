@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Rohit">
+        <meta name="description"content="Sample form">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Age Selector</title>
+    </head>
+    <body bgcolor="cyan">
+        <form oninput="seletedAge.value=parseInt(Inputage.value)">
+            <div>
+                <label for="a"> Select your age 18</label>
+                <input id="a" type="range" name="Inputage">
+                <label for="a">60</label>
+            </div>
+            <div>
+                <label for="b">Your Entered Age as 60</label>
+                <output id="b" name="selectedAge"></output>
+            </div>
+        </form>
+    </body>
+</html>
